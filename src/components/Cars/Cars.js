@@ -11,7 +11,7 @@ function Cars() {
 
   const fetchCars = async () => {
     try {
-      const response = await axios.get('https://automobile-backend.onrender.com/cars');
+      const response = await axios.get('https://carfolio-backend.onrender.com/cars');
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
