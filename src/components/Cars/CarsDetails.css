@@ -1,0 +1,155 @@
+:root {
+    --alice-blue-1: hsl(216, 38%, 95%);
+    --alice-blue-2: hsl(216, 75%, 97%);
+    --alice-blue-3: hsl(216, 38%, 95%);
+    --alice-blue-4: hsl(217, 33%, 92%);
+    --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
+    --carolina-blue: hsl(204, 91%, 53%);
+}
+
+.car-details{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    border-radius: 10px;
+}
+.car-flex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--gradient);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow-y: scroll;
+}
+
+.closeButton{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 30px;
+    color: var(--carolina-blue);
+}
+
+.car-details-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;;
+    padding: 30px;
+}
+.modelName{
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.modelImage{
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #56a0d3;
+}
+
+.detailsCol2, .detailsCol1{
+    display: flex;
+}
+
+.detailsCol1{
+align-items: center;
+width: 100%;
+justify-content: space-around;
+margin-bottom: 30px;
+gap: 10px;
+}
+
+.detailsCol2{
+gap: 40px;
+}
+
+.col1{
+    width: 60%;
+}
+.col2{
+    width: 40%;
+}
+
+.carTable, td, tr{
+    border: 2px solid #56a0d3;
+    text-align: center;
+    border-radius: 10px;
+}
+td,tr{
+    padding: 5px;
+}
+
+.table-heading{
+    color:  #1a9df4;
+}
+
+.table-subheading{
+    font-size: 14px;
+}
+
+.colors-para, .variants-para{
+    margin-bottom: 20px;
+}
+
+.pros-cons-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cars-pros{
+    margin-bottom: 20px;
+}
+
+.pros-icon{
+    color: green;
+}
+
+.pros-icon h3{
+    color: #000;
+}
+
+.cons-icon{
+    color: red;
+}
+
+.cons-icon h3{
+    color: #000;
+}
+
+.cars-summary{
+    text-align: justify;
+}
+
+@media (max-width: 1102px){
+    .detailsCol1{
+        flex-direction: column;
+    }
+    .price{
+        text-align: center;
+    }
+}
+
+@media (max-width: 870px){
+    .detailsCol2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col1, .col2{
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px){
+.modelImage{
+    width: 300px;
+}
+}
