@@ -11,7 +11,7 @@ const News = () => {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('https://automobile-backend.onrender.com/news');
+      const response = await axios.get('https://carfolio-backend.onrender.com/news');
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
